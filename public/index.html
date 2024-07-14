@@ -1,0 +1,34 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i3Money</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="registro">
+        <h2>Registro</h2>
+        <form id="formRegistro">
+            <input type="text" id="username" placeholder="Nombre de usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <button onclick="alternarFormulario()">Ya tengo una cuenta</button>
+    </div>
+
+    <div id="inicioSesion" class="oculto">
+        <h2>Iniciar Sesión</h2>
+        <form id="formLogin">
+            <input type="text" id="loginUsername" placeholder="Nombre de usuario" required>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p id="mensajeError"></p>
+        <button onclick="alternarFormulario()">Crear una cuenta</button>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
